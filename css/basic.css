@@ -56,25 +56,24 @@ a {color:inherit;}
     display: block; 
     content: "";
   }
-  span.hamburg_line {}
-  span.hamburg_line::before {top:-9px;}
-  span.hamburg_line::after {top:9px;}
+  span.hamburg_line {transition:1s;}
+  span.hamburg_line::before {top:-9px;transition:1s;}
+  span.hamburg_line::after {top:9px;transition:1s;}
   
   .hamburg_bar span.on {
     background:transparent; 
     transform:rotate(180deg);
-    transition:1s;
   }
   .hamburg_bar span.on::before {
     top:0px;
     transform:rotate(45deg);
-    transition:1s;
   }
   .hamburg_bar span.on::after {
     top:0px;
     transform:rotate(-45deg);
-    transition:1s;
   }
+
+  
 
 /* 다크 */
 .dark {
