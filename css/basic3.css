@@ -1,0 +1,262 @@
+@charset "UTF-8"; 
+body {font-family: 'Noto Sans KR',Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif}
+
+a{color:black;}
+
+
+
+.div_wrap {
+  width:1250px; margin:auto;
+  position:relative;
+}
+
+
+/*------------헤더------------*/
+header {position:relative;min-width:1250px;height:100px;}
+
+  header > a {
+    position:relative;
+    display:inline-block;
+    left:50%;top:27px;
+    margin-left:-625px;
+    z-index: 100;
+  }
+  header a img {width:270px;}
+
+  .menu_wrap {
+    position:absolute;width:100%;height:60px;bottom:0;
+    border-bottom:#aaa 1px solid;}
+
+    .main_menu { position:absolute;height:100px; left:50%; margin-left:-400px;bottom:0;}
+    .main_menu > li { 
+      position:relative; 
+      top:0; 
+      display:inline-block; 
+      padding:0 0; 
+      margin-left:105px;
+      line-height:100px;
+      height:100px;
+    }
+    .underbar::after { position:relative;
+      top:-3px;
+      display:block; content:""; clear:both; height:5px; background:#333 }
+    
+
+    .main_menu > li a:hover {color:#aaa;}
+
+    .main_menu > li a {padding:40px 0;font-weight:700;transition:0.5s;}
+
+    .sub_menu {
+      font-size:13px;
+      background:#fff;
+      transition:0.5s;
+      position:relative;
+      top:60px;
+      width:100%;
+      z-index: 10;
+      height:0px;
+      overflow: hidden;
+    }
+    .menu_wrap:hover .sub_menu {
+      height:276px;
+    }
+
+    .menu_wrap:hover .sub_menu_main {height:276px}
+
+    .sub_menu_warp { 
+      width:1250px; 
+      height:276px; 
+      margin:0px auto;
+      }
+
+      
+
+    .sub_menu_main {
+      position:absolute; left:50%;margin-left:-400px;
+      height:0px;
+      background:#fff;
+    }
+    .sub_menu_line {
+      float:left;
+      height:276px;
+      text-align:right;
+    }
+
+    .sml1 {margin-left:122px;}
+    .sml2 {margin-left:52px}
+    .sml3 {margin-left:96px}
+    .sml4 {margin-left:77px}
+    .sml5 {margin-left:104px}
+    .sml6 {margin-left:110px}
+    .sub_menu_line ul {margin-top:20px;}
+    .sub_menu_line ul li {}
+    .sub_menu_line ul li a {position:relative;
+      color:#666;
+      display:inline-block; 
+      padding:10px 0; 
+    }
+    
+    .sub_menu_line ul li a::before { display:inline-block;
+      position:absolute;
+      opacity: 0;
+      left:-20px;
+      margin-top:1px;
+      content:" ";
+      background:url('../img/new-next.png') no-repeat;
+      background-size:8px 13px;
+      width:16px; height:27px;
+      transition:all 0.3s;
+    }
+
+    .sub_menu_line ul li:hover a::before {display:inline-block;
+      opacity: 1;
+    }
+/*-----------------------------------------------------------*/
+
+
+
+
+
+
+
+/* ----------메인------------ */
+main {}
+/* ---------------------영상(메인)------------------- */
+
+.medias {}
+
+.medias_title {position:relative;
+  font-size:30px;font-weight:bold; padding-top:110px;
+}
+.medias_title:after { position:absolute; 
+  bottom:-20px; left:0;
+  display:inline-block; content:"";
+  width:50px; height:3px; background:#000;
+  transition:0.5s;
+}
+
+.medias_menu {display:inline-block;
+  margin:100px 0 70px;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+}
+.medias_menu:after {display:block; content:""; clear:both;}
+
+.medias_menu li {
+  float:left; width:230px; 
+  height:40px; border-left:1px solid black;text-align: center;line-height:40px;
+}
+
+
+.medias_menu li:last-child {
+  border-right:1px solid black;
+}
+
+.medias_menu .focus a { 
+  background:#02253B; font-weight:bold; color:#fff;
+}
+.medias_menu li a {width:100%; height:100%;display:block}
+
+
+.medias_videos {}
+.medias_videos:after {display:block; content:""; clear:both;}
+.medias_videos li {
+  float:left;
+  height:500px; border-bottom: 1px solid #ddd;
+  margin:8px;
+}
+.medias_videos li iframe{padding-bottom:5px;}
+.medias_videos li div {font-weight:700; font-size:18px; padding:0 10px;}
+.medias_videos li div span { display:block;
+  font-weight:400; line-height:35px; }
+
+  .bar {text-align: center;padding:100px; line-height:20px;}
+  .bar strong {}
+  .bar a {}
+  .bar a,.bar strong {display:inline-block; vertical-align: middle;margin: 10px;}
+
+
+
+/*---------------------수상경력(메인)---------------------*/
+.prize{
+  text-align: center;
+  background: #f8f8f8;
+  padding: 20px 0;
+}
+
+.prize ul {display:inline-block; margin:0 auto;}
+.prize ul li {
+  display:inline-block;
+  width:65px; 
+  margin: 0 8px;
+  vertical-align: top;
+  
+}
+.prize ul li img { max-width:100%;}
+.prize ul li p {
+  display:inline-block; font-size:12px;line-height:18px;
+  font-weight: 400;word-break:break-all
+}
+
+
+
+footer {    
+  position: relative;
+  background: #eaeaea;
+  padding: 40px 0;}
+footer .div_wrap {display:flex;}
+footer .div_wrap > a {display: inline-block; width: 230px; margin-top: 15px;}
+footer .div_wrap > a > img {width:100%;}
+
+footer .div_wrap > div {display: inline-block; margin-left: 35px; padding-left: 20px; border-left: 1px solid #000;}
+
+footer .div_wrap div > a { font-size:14px; font-weight:bold;}
+footer .div_wrap div p {
+  font-size: 14px;line-height:18px;
+  margin:10px 0;
+  white-space: pre-wrap;
+  letter-spacing: -1px;
+}
+footer .div_wrap div p span {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+footer .div_wrap div ul {position:absolute; top:-10px; right:-10px;}
+footer .div_wrap div li {display:inline-block}
+footer .div_wrap div a {
+  margin-left: 10px;
+  display: inline-block;
+}
+footer .div_wrap div img {max-width:24px;}
+
+/*------------------어사이드-----------------*/
+aside {position:fixed; top:250px; right:20px;
+  background:#fff;
+  width:162px;
+  padding:10px;
+  border:1px solid black;
+}
+
+aside > p {margin-top:10px;}
+aside > p > img {width:140px;}
+
+aside div { }
+.aside_brand {display:block; height:30px;}
+select:focus {outline:none; outline: 2px solid #000; border-radius: 3px;  }
+
+aside > div input {
+  display:block; width: 140px;height:30px;border:1px solid black;
+}
+
+aside input, aside select {margin: 10px 0; border-radius: 0;}
+aside input[type="text"]:focus { outline:none;}
+
+.location_wrap {display:flex; justify-content: space-between;}
+.location {display:inline-block;width:60px; height:30px;}
+
+aside label span {font-size:14px; letter-spacing:-1px;}
+aside > a {display:block; text-align:center; border: 1px solid black; margin: 0 0px 10px; height: 30px; line-height:30px;  font-weight:500;}
+
+.aside1 {color:#fff; background:orange}
+aside > a:hover{ background:#02253B; color:#fff}
