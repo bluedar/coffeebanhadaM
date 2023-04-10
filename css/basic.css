@@ -361,7 +361,7 @@ main { }
   }
   .address .div_wrap div span {
     font-weight:300; 
-    font-size: 12px;
+    font-size: 10px;
     word-spacing: -1px;
   }
   .address .div_wrap div a { 
@@ -371,7 +371,7 @@ main { }
 
   .address .div_wrap div ul {
     position:absolute; 
-    top:20px; 
+    top:30px; 
     right:10px;
   }
   .address .div_wrap div li {
