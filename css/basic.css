@@ -55,6 +55,7 @@ a {color:inherit;}
     background:#000;
     display: block; 
     content: "";
+    border-radius: 2px;
   }
   span.hamburg_line {transition:1s;}
   span.hamburg_line::before {top:-9px;transition:1s;}
@@ -310,14 +311,21 @@ main { }
   tbody tr {
     position:relative;
     display:block; 
-    margin-top:15px; 
-    margin-left:5px;
+    margin: 15px 0 20px 5px;
   }
   tbody tr td {
+    position:relative;
+    display:block; 
     font-size:15px; 
     word-spacing: -1px;
+		overflow:hidden;
+		text-overflow:ellipsis;
   }
-  tbody tr td a {line-height:18px;}
+  tbody tr td a {
+    line-height:18px;
+    white-space:nowrap;
+    
+  }
   tbody tr td:hover a {color:#666}
   tbody tr td span {font-weight:bold}
   .td_left {
@@ -333,7 +341,7 @@ main { }
     background:#EAEAEA; 
     position:relative;
     padding:10px;
-    padding-bottom:100px;
+    padding-bottom:50px;
     font-size: 15px;
     line-height:24px;
     margin-top:30px;
@@ -347,11 +355,15 @@ main { }
   .address .div_wrap > a > img {
     width:100%;
   }
+  .address .div_wrap div { text-align: center;}
   .address .div_wrap div p {
     margin-top:30px;
   }
-  .address .div_wrap div span {font-weight:300}
-  .address .div_wrap div a { font-weight:bold}
+  .address .div_wrap div span {font-weight:300; font-size: 14px;}
+  .address .div_wrap div a { 
+    display: block;
+    font-weight:bold; 
+    font-size:12px;}
 
   .address .div_wrap div ul {
     position:absolute; 
@@ -361,9 +373,6 @@ main { }
   .address .div_wrap div li {
     display:inline-block;
     margin-left: 10px;
-  }
-  .address .div_wrap div a {
-    display: inline-block;
   }
   .address .div_wrap div img {max-width:22px;}
 
